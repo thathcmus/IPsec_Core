@@ -13,6 +13,7 @@ Building and loading hardware on Quartus Prime Lite's Platform Designer:
 - The hardware system file for the board is **./soc_system.socinfo**, use this file with the shell script **./generate_hps_qsys_header.sh** to generate headers for the encryption algorithm components (Using Intel's EDS).
   
 Boot Linux kernel for the DE10 Nano board, communicate with the Linux kernel from Windows using UART.
+- The software is located in the **./software** folder.
 
 ## Review
 Camellia 128-bit mode Cyper Block Chaining Register Table:
@@ -37,7 +38,7 @@ SHA3-256 Table:
 ![image](https://github.com/thathcmus/IPsec_Core/assets/75875704/7b500dab-3b10-4d6c-a55c-b96a899494ec)
 ![image](https://github.com/thathcmus/IPsec_Core/assets/75875704/cf9c493c-cf08-489d-adb9-9cf56586de69)
 ![image](https://github.com/thathcmus/IPsec_Core/assets/75875704/a3423e08-c8ec-4da5-b7cf-800417afd72e)
-- The component uses 89 clocks, with a dedicated frequency of 153MHz and a bandwidth of 224MB/s.
+- The component uses **89 clocks**, with a dedicated frequency of **153MHz** and a bandwidth of **224MB/s**.
 
 ## System & Software
 ![image](https://github.com/thathcmus/IPsec_Core/assets/75875704/7176c6c5-b205-4eef-8ac9-4844559322ec)
