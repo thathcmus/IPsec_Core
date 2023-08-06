@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "Makefile": "c",
+        "camelliacbc_csr.h": "c"
+    }
+}

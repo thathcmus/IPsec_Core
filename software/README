@@ -1,0 +1,21 @@
+Note:
+
+cd C:\intelFPGA\18.0\embedded
+Embedded_Command_Shell.bat
+cd /cygdrive/d/2_HLS/7_HPS_/4_Slave_DMA/DE10_Standard_GHRD/software
+
+sudo service networking restart
+scp receiver_decrytion_data_packet.txt receiver_encrytion_data_packet.txt receiver_ICV.txt receiver_key.txt sender_data_packet.txt sender_encrytion_data_packet.txt sender_ICV.txt sender_key.txt root@192.168.0.100:/home/root/dataFolder
+scp ENCRYPTION_CORE root@192.168.0.100:/home/root/dataFolder
+
+make
+scp ENCRYPTION_CORE root@192.168.0.100:/home/root/dataFolder
+yes
+
+cat sender_data_p   acket.txt
+cat sender_encryption_data_packet.txt
+cat sender_ICV.txt
+cat receiver_encryption_data_packet.txt
+cat receiver_key.txt
+cat receiver_ICV.txt
+cat receiver_decryption_data_packet.txt
